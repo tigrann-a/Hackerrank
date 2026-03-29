@@ -62,8 +62,92 @@ static int minimumNumber(int n, string password)
 
     int minNumber = 0;
 
+    bool noMatches = false;
+
+    //for (int i = 0; i < password.Length; i++)
+    //{
+    //    char currentSymbol = password[i];
+        
+    //    if (numbers.Contains(currentSymbol))
+    //    {
+    //        noMatches = false;
+    //        break;
+    //    }
+    //    else
+    //    {
+    //        noMatches = true;
+    //        continue;
+    //    }
+    //}
+
+    //if (noMatches)
+    //    minNumber += 1;
+
+    //for (int i = 0; i < password.Length; i++)
+    //{
+    //    char currentSymbol = password[i];
+
+    //    if (lower_case.Contains(currentSymbol))
+    //    {
+    //        noMatches = false;
+    //        break;
+    //    }
+    //    else
+    //    {
+    //        noMatches = true;
+    //        continue;
+    //    }
+    //}
+
+    //if (noMatches)
+    //    minNumber += 1;
+
+    //for (int i = 0; i < password.Length; i++)
+    //{
+    //    char currentSymbol = password[i];
+
+    //    if (upper_case.Contains(currentSymbol))
+    //    {
+    //        noMatches = false;
+    //        break;
+    //    }
+    //    else
+    //    {
+    //        noMatches = true;
+    //        continue;
+    //    }
+    //}
+
+    //if (noMatches)
+    //    minNumber += 1;
+
+    //for (int i = 0; i < password.Length; i++)
+    //{
+    //    char currentSymbol = password[i];
+
+    //    if (special_characters.Contains(currentSymbol))
+    //    {
+    //        noMatches = false;
+    //        break;
+    //    }
+    //    else
+    //    {
+    //        noMatches = true;
+    //        continue;
+    //    }
+    //}
+
+    //if (noMatches)
+    //    minNumber += 1;
+
+    if(password.Length < 6)
+    {
+        int diff = 6 - password.Length;
+        minNumber += diff;
+    }
+
     Console.WriteLine(minNumber);
     return 1;
 }
 
-int minNum = minimumNumber(3, "Ab1");
+int minNum = minimumNumber(5, "2bbbb");
