@@ -151,5 +151,5 @@ static int minimumNumber(int n, string password)
     return minSymbolsForTruePasswordLength;
 }
 
-int minNum = minimumNumber(3, "Ab1");
+int minNum = minimumNumber(5, "2bbbb");
 Console.WriteLine(minNum);
